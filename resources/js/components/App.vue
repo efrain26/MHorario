@@ -7,9 +7,10 @@
 <script>
     import Login from "./Auth/Login";
     import GestionMaestros from "./MaestrosLista/GestionMaestros";
+    import Materias from "./Horario/materias";
     export default {
         name: "App",
-        components: {GestionMaestros, Login},
+        components: {Materias, GestionMaestros, Login},
     }
 </script>
 
