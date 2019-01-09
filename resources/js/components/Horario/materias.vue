@@ -1,8 +1,12 @@
 <template>
+
     <div class="container">
         <div class="row">
-        <div class="col-md-3"></div>
-        <table class="table table-bordered">
+
+            <div class="text">
+                <h1>Seleccionar materia a impartir</h1>
+            </div>
+        <table class="table table-hover">
             <thead>
             <tr>
                 <th scope="col">Clave</th>
@@ -27,11 +31,20 @@
                 <td>07:50-08:50</td>
                 <td>07:50-08:50</td>
                 <td>07:50-08:50</td>
-                <td></td>
+                <td>  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                </td>
             </tr>
             </tbody>
         </table>
-        <div class="col-"></div>
+        <div class="container">
+            <div class="row">
+            <div class="col-md-10 col-lg-10"></div>
+            <div class="col-md-2 col-lg-2">
+            <button type="button" class="btn btn-success"  >Guardar</button>
+            </div>
+            </div>
+        </div>
+
         </div>
     </div>
 </template>
@@ -43,5 +56,12 @@
 </script>
 
 <style scoped>
+    table tr{
+        text-align: center;
+    }
+    h1{
+        margin-left: 10rem;
+        font-size: 3.25rem;
+    }
 
 </style>
