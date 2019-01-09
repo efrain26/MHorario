@@ -37754,13 +37754,13 @@ var staticRenderFns = [
             _c("table", { staticClass: "table table-hover" }, [
               _c("thead", [
                 _c("tr", [
-                  _c("th", { attrs: { scope: "col" } }, [_vm._v("#")]),
+                  _c("th", { attrs: { scope: "col" } }, [_vm._v("Clave")]),
                   _vm._v(" "),
-                  _c("th", { attrs: { scope: "col" } }, [_vm._v("First")]),
+                  _c("th", { attrs: { scope: "col" } }, [_vm._v("Nombre")]),
                   _vm._v(" "),
-                  _c("th", { attrs: { scope: "col" } }, [_vm._v("Last")]),
+                  _c("th", { attrs: { scope: "col" } }, [_vm._v("Apellido")]),
                   _vm._v(" "),
-                  _c("th", { attrs: { scope: "col" } }, [_vm._v("Handle")])
+                  _c("th", { attrs: { scope: "col" } }, [_vm._v("Opciones")])
                 ])
               ]),
               _vm._v(" "),
