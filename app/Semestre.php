@@ -1,15 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Nyami
- * Date: 09/01/2019
- * Time: 13:14
- */
 
-namespace App\Providers;
+namespace App;
 
+use Illuminate\Database\Eloquent\Model;
 
-class Semestre
+class Semestre extends Model
 {
-
+    //
 }
