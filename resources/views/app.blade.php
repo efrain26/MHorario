@@ -16,16 +16,19 @@
             @auth
                 <a href="{{ url('/home') }}">Home</a>
             @else
-                <a href="{{ route('login') }}">Login</a>
+                <a href="{{ route('login') }}" class="col-lg-12">Login</a>
 
                 @if (Route::has('register'))
-                    <a href="{{ route('register') }}">Register</a>
+                    <a href="{{ route('register') }}" class="col-lg-12">Register</a>
                 @endif
             @endauth
         </div>
     @endif
 
+
+
     <div id ="app">
+
     </div>
 </div>
 <script src="{{ mix('/js/app.js') }}"></script>

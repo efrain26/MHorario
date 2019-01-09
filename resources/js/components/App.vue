@@ -1,10 +1,14 @@
 <template>
-
+<div>
+    <login></login>
+</div>
 </template>
 
 <script>
+    import Login from "./Auth/Login";
     export default {
         name: "App",
+        components: {Login},
     }
 </script>
 
