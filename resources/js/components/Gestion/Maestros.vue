@@ -1,72 +1,66 @@
 <template>
     <div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12" >
-                    <h1 class="tiesp">Gestión de Maestros</h1>
-
-                    <table class="table table-hover">
-
-                        <thead>
-                        <tr>
-                            <th scope="col">Clave</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellido</th>
-                            <th scope="col">Opciones</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>
-                                <button type="button" class="btn" style="font-size: 18px"><i class="fa fa-pencil"></i></button>
-
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <button id="lista" type="button" class="btn btn-primary"><i class="fa fa-users"></i>  Agregar Maestros</button>
-                </div>
-            </div>
+        <div style="padding-top:50px" class="container">
+            <h1 class="text-center"><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
+            <br>
+            <b-table striped :fields="fields" :items="items">
+                <!-- A virtual column -->
+                <template slot="index" slot-scope="data">
+                    <span class="text-muted text-capitalize"><h5>{{data.index + 1}}</h5></span>
+                </template>
+                <!-- A custom formatted column -->
+                <template slot="name" slot-scope="data">
+                    <span class="text-muted text-capitalize"><h5>{{data.value.first}} {{data.value.last}}</h5></span>
+                </template>
+                <!-- A virtual composite column -->
+                <template slot="nameage" slot-scope="data">
+                    <span class="text-muted text-capitalize"><h5>{{data.item.name.first}} is {{data.item.age}} years old</h5></span>
+                </template>
+            </b-table>
+        </div>
+        <div>
+            <router-link :to="{ name: 'gestion'}">Gestion</router-link>
         </div>
     </div>
 </template>
 
 <script>
+    import NewTeacher from "../utilities/NewTeacher";
+
     export default {
-        name: "Maestros"
+        name: "Maestros",
+        components: {NewTeacher},
+        data () {
+            return {
+
+                fields: [
+                    // A virtual column that doesn't exist in items
+                    'index',
+                    // A column that needs custom formatting
+                    { key: 'name', label: 'Full Name' },
+                    // A regular column
+                    'age',
+                    // A regular column
+                    'sex',
+                    // A virtual column made up from two fields
+                    { key: 'nameage', label: 'First name and age' }
+                ],
+                items: [
+                    { name: { first: 'John', last: 'Doe' }, sex: 'Male', age: 42 },
+                    { name: { first: 'Jane', last: 'Doe' }, sex: 'Female', age: 36 },
+                    { name: { first: 'Rubin', last: 'Kincade' }, sex: 'Male', age: 73 },
+                    { name: { first: 'Shirley', last: 'Partridge' }, sex: 'Female', age: 62 }
+                ]
+            }
+        }
     }
 </script>
 
 <style scoped>
-    table th {
-        text-align: center;
+
+    th {
+        text-align: inherit;
+        font-size: 20px;
     }
-    .table
-    {
-        margin: auto;
-        width: 50% !important;
-    }
-    table tr
-    {
-        text-align: center;
-    }
-    h1
-    {
-        text-align: center;
-    }
-    .tiesp
-    {
-        margin-bottom: 35px;
-    }
-    #lista
-    {
-        text-align: center;
-    }
+
 </style>

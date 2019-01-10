@@ -5,6 +5,7 @@ import Login from "../components/Auth/Login";
 import Gestion from "../components/Gestion/Gestion";
 import Principal from "../components/Horario/Principal";
 import Materias from "../components/Horario/Materias";
+import Maestros from "../components/Gestion/Maestros";
 
 
 Vue.use(VueRouter);
@@ -19,7 +20,13 @@ const router = new VueRouter({
         },
         {
             path:'/gestion/',
+            name:'gestion',
             component: Gestion
+        },
+        {
+            path:'/gestion/maestros',
+            name:'gestion.maestros',
+            component: Maestros
         },
         {
             path:'/home/',
