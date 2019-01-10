@@ -1,5 +1,7 @@
 <template>
-    
+    <div>
+        <h3>Horario</h3>
+    </div>
 </template>
 
 <script>
