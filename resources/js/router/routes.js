@@ -22,12 +22,13 @@ const router = new VueRouter({
             component: Gestion
         },
         {
-            path:'/home',
-            component: Principal,
-            children:[{
-                path:'/crear',
-                component: Materias
-            }]
+            path:'/home/',
+            component: Principal
+        },
+        {
+            path:'/home/crear/',
+            name:'home.crear',
+            component: Materias
         }
     ]
 });

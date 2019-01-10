@@ -5,7 +5,7 @@
             <div class="row">
                 <table class="table table-bordered">
                     <tbody>
-                    <tr >
+                    <tr>
                         <th scope="row" style="width: 20%">Nombre Maestro</th>
                         <td>Felix Diáz Villanueva</td>
                     </tr>
@@ -32,6 +32,7 @@
 <script>
     import HorarioFinal from "./HorarioFinal";
     import Materias from "./Materias";
+
     export default {
         name: "Principal",
         components: {HorarioFinal, Materias}
@@ -39,13 +40,15 @@
 </script>
 
 <style scoped>
-    .btn{
+    .btn {
         margin-left: 6.4rem;
     }
-    img-thumbnail{
+
+    img-thumbnail {
         text-align: center;
     }
-    h1{
+
+    h1 {
         text-align: center;
     }
 </style>
