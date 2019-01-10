@@ -3,14 +3,15 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="contenedor-botones" role="gruop">
+                   <h1>  <img src="img/idiftec1.png" class="img-rounded" /><b> INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
+                    <br>
                     <button id="lista" type="button" class="btn btn-primary"><i class="fa fa-users"></i>  Maestros</button>
                     <button id="horario" type="button" class="btn btn-primary"><i class="fa fa-clock-o"></i>  Horario</button>
                     <Maestros></Maestros>
                 </div>
-
+            </div>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -29,11 +30,20 @@
     button
     {
         text-align: center;
-       
+
     }
     .contenedor-botones {
        text-align: right;
-        padding: 30px;
+        padding: 40px;
     }
 
+    h1 {
+        text-align: center;
+        color: blue;
+    }
+    img
+    {
+        width: 100px;
+        height: 100px;
+    }
 </style>

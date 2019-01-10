@@ -21,18 +21,10 @@
                             <td>Mark</td>
                             <td>Otto</td>
                             <td>
-                                <button type="button" class="btn" style="font-size: 18px"><i class="fa fa-pencil"></i>
-                                </i></button>
+                                <button type="button" class="btn" style="font-size: 18px"><i class="fa fa-pencil"></i></button>
 
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jacob</td>
-                            <td>Thornton</td>
-                            <td>@fat</td>
-                        </tr>
-
                         </tbody>
                     </table>
 
