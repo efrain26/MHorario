@@ -1,7 +1,15 @@
 <template>
+
     <div>
+        <div>
+            <div class="row">
+                <div class="col-md-12">
+                        <h1 id="escu"> <img src="/img/logo.png" class="img-rounded"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
+                </div>
+            </div>
+        </div>
         <div class="text">
-            <h1>Seleccionar materia</h1>
+            <h2>Seleccionar materia</h2>
         </div>
         <div class="">
             <div class="">
@@ -62,10 +70,11 @@
     table tr{
         text-align: center;
     }
-    h1{
+    h2{
         font-size: 2.3rem;
         margin-top: 1rem;
         text-align: center;
+        margin-block-start: -2rem
     }
     .text
     {
@@ -73,5 +82,14 @@
     }
     .btn{
         margin-left: 1.8rem;
+    }
+    img
+    {
+        width: 75px;
+        height: 100px;
+    }
+    h1{
+        color: blue;
+        text-align: center;
     }
 </style>
