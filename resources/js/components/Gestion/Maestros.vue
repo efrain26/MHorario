@@ -34,14 +34,12 @@
                 </div>
             </div>
         </div>
-        </div>
-
-
+    </div>
 </template>
 
 <script>
     export default {
-        name: "GestionMaestros"
+        name: "Maestros"
     }
 </script>
 
@@ -65,6 +63,4 @@
     {
         margin-bottom: 35px;
     }
-
-
 </style>

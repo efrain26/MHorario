@@ -1,16 +1,14 @@
 <template>
 <div>
-    <GestionMaestros></GestionMaestros>
+    <login></login>
 </div>
 </template>
 
 <script>
     import Login from "./Auth/Login";
-    import GestionMaestros from "./MaestrosLista/GestionMaestros";
-    import Materias from "./Horario/materias";
     export default {
         name: "App",
-        components: {Materias, GestionMaestros, Login},
+        components: {Login},
     }
 </script>
 
