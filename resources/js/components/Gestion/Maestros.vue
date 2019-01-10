@@ -27,7 +27,11 @@
                         </tr>
                         </tbody>
                     </table>
-
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button id="lista" type="button" class="btn btn-primary"><i class="fa fa-users"></i>  Agregar Maestros</button>
                 </div>
             </div>
         </div>
@@ -60,5 +64,9 @@
     .tiesp
     {
         margin-bottom: 35px;
+    }
+    #lista
+    {
+        text-align: center;
     }
 </style>

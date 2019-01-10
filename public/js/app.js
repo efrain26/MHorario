@@ -1923,6 +1923,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Maestros"
 });
@@ -6377,7 +6381,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\ntable th[data-v-40febbd6] {\n    text-align: center;\n}\n.table[data-v-40febbd6]\n{\n    margin: auto;\n    width: 50% !important;\n}\ntable tr[data-v-40febbd6]\n{\n    text-align: center;\n}\nh1[data-v-40febbd6]\n{\n    text-align: center;\n}\n.tiesp[data-v-40febbd6]\n{\n    margin-bottom: 35px;\n}\n", ""]);
+exports.push([module.i, "\ntable th[data-v-40febbd6] {\n    text-align: center;\n}\n.table[data-v-40febbd6]\n{\n    margin: auto;\n    width: 50% !important;\n}\ntable tr[data-v-40febbd6]\n{\n    text-align: center;\n}\nh1[data-v-40febbd6]\n{\n    text-align: center;\n}\n.tiesp[data-v-40febbd6]\n{\n    margin-bottom: 35px;\n}\n#lista[data-v-40febbd6]\n{\n    text-align: center;\n}\n", ""]);
 
 // exports
 
@@ -38037,6 +38041,22 @@ var staticRenderFns = [
                 ])
               ])
             ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary",
+                attrs: { id: "lista", type: "button" }
+              },
+              [
+                _c("i", { staticClass: "fa fa-users" }),
+                _vm._v("  Agregar Maestros")
+              ]
+            )
           ])
         ])
       ])
