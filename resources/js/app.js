@@ -28,6 +28,9 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
 /**
  * Master App
  */
@@ -37,6 +40,10 @@ import App from './components/App';
  */
 import router from './router/routes';
 
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+
+Vue.use(BootstrapVue);
 
 const app = new Vue({
     el: '#app',

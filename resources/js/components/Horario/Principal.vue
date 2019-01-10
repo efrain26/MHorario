@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="font-weight-bold">Detalles Maestro</h1>
+        <!--<h1 class="font-weight-bold">Detalles Maestro</h1>
         <div class="container">
             <div class="row">
                 <table class="table table-bordered">
@@ -23,11 +23,12 @@
                 <button type="button" class="btn btn-primary btn-lg">Generar Horario</button>
             </div>
             <div class="col-md-1"></div>
-        </div>
-        <!--<Materias></Materias>-->
-        <HorarioFinal></HorarioFinal>
+        </div>-->
+        <b-table striped hover :items="items"></b-table>
+        <b-button variant="primary"> I am a Button</b-button>
     </div>
 </template>
+
 
 <script>
     import HorarioFinal from "./HorarioFinal";
@@ -35,7 +36,18 @@
 
     export default {
         name: "Principal",
-        components: {HorarioFinal, Materias}
+        components: {HorarioFinal, Materias},
+        data () {
+            return {
+                items: [
+                    {
+                        isActive: true,
+                        age: 40,
+                        first_name: 'Dickerson',
+                        last_name: 'Macdonald' }
+                ]
+            }
+        }
     }
 </script>
 
