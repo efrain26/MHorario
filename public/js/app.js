@@ -6358,7 +6358,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nlista[data-v-237482f0]\n{\n    text-align: center;\n}\nbutton[data-v-237482f0]\n{\n    text-align: center;\n}\n.contenedor-botones[data-v-237482f0] {\n   text-align: right;\n    padding: 40px;\n}\nh1[data-v-237482f0] {\n    text-align: center;\n    color: blue;\n}\nimg[data-v-237482f0]\n{\n    width: 100px;\n    height: 100px;\n}\n", ""]);
+exports.push([module.i, "\nlista[data-v-237482f0]\n{\n    text-align: center;\n}\nbutton[data-v-237482f0]\n{\n    text-align: center;\n}\n.contenedor-botones[data-v-237482f0] {\n   text-align: right;\n    padding: 40px;\n}\nh1[data-v-237482f0] {\n    text-align: center;\n    color: blue;\n    padding: 20px;\n}\nimg[data-v-237482f0]\n{\n    width: 100px;\n    height: 100px;\n}\n", ""]);
 
 // exports
 
@@ -37937,11 +37937,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("h1", [
-      _c("img", {
-        staticClass: "img-rounded",
-        attrs: { src: "img/idiftec1.png" }
-      }),
-      _c("b", [_vm._v(" INSTITUTO DE DIFUCION TECNICA No.1")])
+      _c("img", { staticClass: "img-rounded", attrs: { src: "img/logo.png" } }),
+      _c("b", [_vm._v("INSTITUTO DE DIFUCION TECNICA No.1")])
     ])
   },
   function() {

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="contenedor-botones" role="gruop">
-                   <h1>  <img src="img/idiftec1.png" class="img-rounded" /><b> INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
+                   <h1>  <img src="img/logo.png" class="img-rounded"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
                     <br>
                     <button id="lista" type="button" class="btn btn-primary"><i class="fa fa-users"></i>  Maestros</button>
                     <button id="horario" type="button" class="btn btn-primary"><i class="fa fa-clock-o"></i>  Horario</button>
@@ -40,6 +40,7 @@
     h1 {
         text-align: center;
         color: blue;
+        padding: 20px;
     }
     img
     {
