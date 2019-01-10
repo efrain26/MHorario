@@ -19,4 +19,5 @@ Auth::routes();
 
 Route::view('/', 'App');
 Route::view('/gestion', 'App');
-Route::view('/horario', 'App');
+Route::view('/home', 'App');
+Route::view('/home/crear', 'App');

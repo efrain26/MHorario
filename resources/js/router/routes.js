@@ -4,6 +4,7 @@ import VueRouter from 'vue-router';
 import Login from "../components/Auth/Login";
 import Gestion from "../components/Gestion/Gestion";
 import Principal from "../components/Horario/Principal";
+import Materias from "../components/Horario/Materias";
 
 
 Vue.use(VueRouter);
@@ -21,8 +22,12 @@ const router = new VueRouter({
             component: Gestion
         },
         {
-            path:'/horario/',
-            component: Principal
+            path:'/home',
+            component: Principal,
+            children:[{
+                path:'/crear',
+                component: Materias
+            }]
         }
     ]
 });
