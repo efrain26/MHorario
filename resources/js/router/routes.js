@@ -4,7 +4,6 @@ import VueRouter from 'vue-router';
 import Login from "../components/Auth/Login";
 import Gestion from "../components/Gestion/Gestion";
 import Maestros from "../components/Gestion/Maestros";
-import Administradores from "../components/Gestion/Administradores";
 
 
 Vue.use(VueRouter);
@@ -26,7 +25,7 @@ const router = new VueRouter({
                 },
                 {
                     path:'/administradores',
-                    component: Administradores
+                    component: Materias
                 }
             ]
         }
