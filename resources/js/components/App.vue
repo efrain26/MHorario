@@ -1,14 +1,15 @@
 <template>
 <div>
-    <login></login>
+    <Maestros></Maestros>
 </div>
 </template>
 
 <script>
     import Login from "./Auth/Login";
+    import Maestros from "./Gestion/Maestros";
     export default {
         name: "App",
-        components: {Login},
+        components: {Maestros, Login},
     }
 </script>
 

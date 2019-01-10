@@ -4,6 +4,7 @@
             <div class="row">
                 <div class="col-md-12" >
                     <h1 class="tiesp">Gestión de Maestros</h1>
+
                     <table class="table table-hover">
 
                         <thead>
@@ -19,7 +20,11 @@
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
-                            <td>@mdo</td>
+                            <td>
+                                <button type="button" class="btn" style="font-size: 18px"><i class="fa fa-pencil"></i>
+                                </i></button>
+
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
@@ -47,12 +52,13 @@
     table th {
         text-align: center;
     }
-
-    .table {
+    .table
+    {
         margin: auto;
         width: 50% !important;
     }
-    table tr{
+    table tr
+    {
         text-align: center;
     }
     h1

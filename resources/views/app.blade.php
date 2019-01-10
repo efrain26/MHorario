@@ -8,8 +8,12 @@
 
     <title>APP HORARIOS</title>
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
 <div class="flex-center position-ref full-height">
     {{--@if (Route::has('login'))
         <div class="top-right links">
@@ -25,7 +29,6 @@
         </div>
     @endif--}}
     <div id ="app">
-
     </div>
 </div>
 <script src="{{ mix('/js/app.js') }}"></script>
