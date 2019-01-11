@@ -1,6 +1,11 @@
 <template>
     <div class="container">
-        <!--<h1 class="font-weight-bold">Detalles Maestro</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="escu"> <img src="/img/logo.png" class="img-rounded"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
+            </div>
+        </div>
+        <h2 class="font-weight-bold">Detalles Maestro</h2>
         <div class="container">
             <div class="row">
                 <table class="table table-bordered">
@@ -23,15 +28,8 @@
                 <button type="button" class="btn btn-primary btn-lg">Generar Horario</button>
             </div>
             <div class="col-md-1"></div>
-        </div>-->
-        <h1>Detalles Maestros</h1>
-        <b-table striped hover :items="items">asfdcsxc</b-table>
-        <div class="row">
-            <div class="col-md-8"></div>
-            <div class="col-md-4" style="text-align: right" id="tab" >
-                <b-button variant="primary" >Generar Horario</b-button>
-            </div>
         </div>
+
     </div>
 </template>
 
@@ -43,23 +41,13 @@
     export default {
         name: "Principal",
         components: {HorarioFinal, Materias},
-        data () {
-            return {
-                items: [
-                    {
-
-                        Nombre_Maestro: 'Felix Diáz Villanueva',
-                        Clave: 'DIVF802514' ,
-                    }
-                ]
-            }
-        }
     }
 </script>
 
 <style scoped>
-    btn {
-        margin-left: 6.4rem;
+    .btn {
+        margin-left: 141px;
+        font-size: 15px;
     }
 
     img-thumbnail {
@@ -68,8 +56,26 @@
 
     h1 {
         text-align: center;
+        margin-top: 15px;
     }
     body{
         text-size: 15px;
+    }
+    img
+    {
+        width: 75px;
+        height: 100px;
+    }
+    h1{
+        color: blue;
+        text-align: center;
+        font-size: 25px;
+    }
+    h2{
+        text-align: center;
+        margin-top: -3rem;
+    }
+    table{
+        font-size: 15px;
     }
 </style>
