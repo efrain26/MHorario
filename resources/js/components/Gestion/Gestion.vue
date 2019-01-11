@@ -1,6 +1,15 @@
 <template>
     <div>
-        <router-link :to="{ name: 'gestion.maestros'}">Maestros</router-link>
+        <div class="row">
+            <div class="col-md-12" style="text-align: right; padding:30px">
+                <button type="button" class="btn btn-primary" style="font-size: 18px"> <i class="fa fa-users"></i> Maestros </button>
+                <button type="button" class="btn btn-primary" style="font-size: 18px"> <i class="fa fa-clock-o"></i> Horarios</button>
+            </div>
+        </div>
+            <div class="container">
+                <Maestros></Maestros>
+
+            </div>
     </div>
 </template>
 
@@ -13,28 +22,4 @@
 </script>
 
 <style scoped>
-    lista
-    {
-        text-align: center;
-    }
-    button
-    {
-        text-align: center;
-
-    }
-    .contenedor-botones {
-       text-align: right;
-        padding: 40px;
-    }
-
-    h1 {
-        text-align: center;
-        color: blue;
-        padding: 20px;
-    }
-    img
-    {
-        width: 100px;
-        height: 100px;
-    }
 </style>
