@@ -1,7 +1,7 @@
 <template>
 
-    <div>
-        <div>
+    <div class="container">
+       <!-- <div>
             <div class="row">
                 <div class="col-md-12">
                         <h1 id="escu"> <img src="/img/logo.png" class="img-rounded"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
@@ -56,13 +56,51 @@
                         <button type="button" class="btn btn-success">Guardar</button>
                     </div>
                 </div>
+            </div>-->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 id="escu"> <img src="/img/logo.png" class="img-rounded"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
             </div>
+        </div>
+        <div class="row">
+            <!--<div class="col-md-1"></div>-->
+            <div class="col-md-12">
+                <template>
+                <b-table class="table" striped hover :items="items" :fields="fields"></b-table>
+                <b-form-checkbox id="checkbox1"
+                                 v-model="status"
+                                 value="accepted"
+                                 unchecked-value="not_accepted">
+                </b-form-checkbox>
+                </template>
+            </div>
+            <!--<div class="col-md-1"></div>-->
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "Materias"
+        name: "Materias",
+        data () {
+            return {
+                items: [
+                    {
+                        'Clave': '5FP1',
+                        'Materia': 'Calculo Integral',
+                        'Semestre': '5',
+                        'Lunes': '08:50-09:50',
+                        'Martes': '08:50-09:50',
+                        'Miercoles': '08:50-09:50',
+                        'Jueves': '08:50-09:50',
+                        'Viernes': '08:50-09:50',
+                        'Seleccionar': ''
+                    }
+                ],
+
+            }
+        }
+
     }
 </script>
 
@@ -76,13 +114,6 @@
         text-align: center;
         margin-block-start: -2rem
     }
-    .text
-    {
-        margin-bottom: 15px;
-    }
-    .btn{
-        margin-left: 1.8rem;
-    }
     img
     {
         width: 75px;
@@ -90,6 +121,9 @@
     }
     h1{
         color: blue;
+        text-align: center;
+    }
+    table table {
         text-align: center;
     }
 </style>

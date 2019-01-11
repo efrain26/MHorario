@@ -28,7 +28,7 @@
         <b-table striped hover :items="items">asfdcsxc</b-table>
         <div class="row">
             <div class="col-md-8"></div>
-            <div class="col-md-4" style="text-align: right">
+            <div class="col-md-4" style="text-align: right" id="tab" >
                 <b-button variant="primary" >Generar Horario</b-button>
             </div>
         </div>
@@ -69,5 +69,7 @@
     h1 {
         text-align: center;
     }
-
+    body{
+        text-size: 15px;
+    }
 </style>
