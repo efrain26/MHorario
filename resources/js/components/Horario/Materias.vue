@@ -1,7 +1,7 @@
 <template>
 
     <div class="container">
-       <!-- <div>
+        <div>
             <div class="row">
                 <div class="col-md-12">
                         <h1 id="escu"> <img src="/img/logo.png" class="img-rounded"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
@@ -11,7 +11,7 @@
         <div class="text">
             <h2>Seleccionar materia</h2>
         </div>
-        <div class="">
+        <div class="row">
             <div class="">
                 <div class="col-md-10">
                     <table class="table table-hover">
@@ -56,57 +56,31 @@
                         <button type="button" class="btn btn-success">Guardar</button>
                     </div>
                 </div>
-            </div>-->
-        <div class="row">
-            <div class="col-md-12">
-                <h1 id="escu"> <img src="/img/logo.png" class="img-rounded"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
             </div>
-        </div>
-        <div class="row">
-            <!--<div class="col-md-1"></div>-->
-            <div class="col-md-12">
-                <template>
-                <b-table class="table" striped hover :items="items" :fields="fields"></b-table>
-                <b-form-checkbox id="checkbox1"
-                                 v-model="status"
-                                 value="accepted"
-                                 unchecked-value="not_accepted">
-                </b-form-checkbox>
-                </template>
-            </div>
-            <!--<div class="col-md-1"></div>-->
-        </div>
+
     </div>
 </template>
 
 <script>
     export default {
-        name: "Materias",
-        data () {
-            return {
-                items: [
-                    {
-                        'Clave': '5FP1',
-                        'Materia': 'Calculo Integral',
-                        'Semestre': '5',
-                        'Lunes': '08:50-09:50',
-                        'Martes': '08:50-09:50',
-                        'Miercoles': '08:50-09:50',
-                        'Jueves': '08:50-09:50',
-                        'Viernes': '08:50-09:50',
-                        'Seleccionar': ''
-                    }
-                ],
-
-            }
-        }
+        name: "Materias"
 
     }
 </script>
 
 <style scoped>
+    .text
+    {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    .btn{
+        margin-left: 5rem;
+        font-size: 15px;
+    }
     table tr{
         text-align: center;
+        font-size: 15px;
     }
     h2{
         font-size: 2.3rem;
@@ -122,6 +96,7 @@
     h1{
         color: blue;
         text-align: center;
+        font-size: 25px;
     }
     table table {
         text-align: center;
