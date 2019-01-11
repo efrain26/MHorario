@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <!--<h1 class="font-weight-bold">Detalles Maestro</h1>
         <div class="container">
             <div class="row">
@@ -24,8 +24,14 @@
             </div>
             <div class="col-md-1"></div>
         </div>-->
-        <b-table striped hover :items="items"></b-table>
-        <b-button variant="primary"> I am a Button</b-button>
+        <h1>Detalles Maestros</h1>
+        <b-table striped hover :items="items">asfdcsxc</b-table>
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4" style="text-align: right" id="tab" >
+                <b-button variant="primary" >Generar Horario</b-button>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -41,10 +47,10 @@
             return {
                 items: [
                     {
-                        isActive: true,
-                        age: 40,
-                        first_name: 'Dickerson',
-                        last_name: 'Macdonald' }
+
+                        Nombre_Maestro: 'Felix Diáz Villanueva',
+                        Clave: 'DIVF802514' ,
+                    }
                 ]
             }
         }
@@ -52,7 +58,7 @@
 </script>
 
 <style scoped>
-    .btn {
+    btn {
         margin-left: 6.4rem;
     }
 
@@ -62,5 +68,8 @@
 
     h1 {
         text-align: center;
+    }
+    body{
+        text-size: 15px;
     }
 </style>
