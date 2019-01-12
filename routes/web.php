@@ -22,4 +22,8 @@ Route::view('/gestion', 'App');
 Route::view('/gestion/maestros', 'App');
 Route::view('/home', 'App');
 Route::view('/home/crear', 'App');
+Route::view('/home/crear/previewmaterias', 'App');
+Route::view('/home/crear/previewmaterias/horariofinal', 'App');
+
+
 

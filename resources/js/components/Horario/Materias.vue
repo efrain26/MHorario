@@ -12,7 +12,7 @@
             <h2>Seleccionar materia</h2>
         </div>
         <div class="row">
-            <div class="">
+            <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <table class="table table-hover">
                         <thead>
@@ -45,19 +45,14 @@
                         </tbody>
                     </table>
                 </div>
-
+            <div class="col-md-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-10"></div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-success">Guardar</button>
             </div>
         </div>
-        <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-10"></div>
-                    <div class="col-md-1 col-lg-1"></div>
-                    <div class="col-md-1 col-lg-1">
-                        <button type="button" class="btn btn-success">Guardar</button>
-                    </div>
-                </div>
-            </div>
-
     </div>
 </template>
 
@@ -75,7 +70,6 @@
         font-size: 15px;
     }
     .btn{
-        margin-left: 5rem;
         font-size: 15px;
     }
     table tr{

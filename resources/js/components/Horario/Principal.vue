@@ -23,11 +23,9 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-7"></div>
-            <div class="col-md-4" id="btn">
+            <div class="col-md-11">
                 <button type="button" class="btn btn-primary btn-lg">Generar Horario</button>
             </div>
-            <div class="col-md-1"></div>
         </div>
 
     </div>
@@ -46,8 +44,8 @@
 
 <style scoped>
     .btn {
-        margin-left: 141px;
         font-size: 15px;
+        margin-left: 98rem;
     }
 
     img-thumbnail {
