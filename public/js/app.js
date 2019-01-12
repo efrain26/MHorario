@@ -1927,6 +1927,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2110,6 +2115,25 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -6506,7 +6530,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.listmaestr[data-v-40febbd6] {\n    font-size: 16px;\n}\ntd[data-v-40febbd6] {\n    text-align: center;\n}\nth[data-v-40febbd6] {\n    text-align: center;\n}\n", ""]);
+exports.push([module.i, "\n.listmaestr[data-v-40febbd6] {\n    font-size: 16px;\n}\ntd[data-v-40febbd6] {\n    text-align: center;\n}\nth[data-v-40febbd6] {\n    text-align: center;\n}\ntitle[data-v-40febbd6]\n{\n    text-align: center;\n}\n", ""]);
 
 // exports
 
@@ -39104,7 +39128,7 @@ var render = function() {
         _vm._v(" "),
         _c(
           "sweet-modal",
-          { ref: "modal", attrs: { title: "Titulo aqui" } },
+          { ref: "modal", attrs: { title: "Registro de Maestros" } },
           [_c("NewTeacher")],
           1
         )
@@ -39136,7 +39160,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("tbody", [
           _c("tr", [
-            _c("th", { attrs: { scope: "row" } }, [_vm._v("1")]),
+            _c("th", { attrs: { scope: "row" } }, [_vm._v("2018M19R")]),
             _vm._v(" "),
             _c("td", [_vm._v("Manuel")]),
             _vm._v(" "),
@@ -39147,7 +39171,15 @@ var staticRenderFns = [
             _c("td", [
               _c("button", {
                 staticClass: "fa fa-edit",
-                staticStyle: { width: "35px" },
+                staticStyle: {
+                  width: "35px",
+                  "background-color": "Transparent",
+                  "background-repeat": "no-repeat",
+                  border: "none",
+                  cursor: "pointer",
+                  overflow: "hidden",
+                  outline: "none"
+                },
                 attrs: { type: "button" }
               })
             ])
@@ -39426,89 +39458,101 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", [
       _c("div", { staticClass: "mx-3" }, [
-        _c("div", { staticClass: "md-form mb-5" }, [
-          _c("i", { staticClass: "fas fa-user prefix grey-text" }),
+        _c("div", { staticClass: "md-form mb-3" }, [
+          _c("i", { staticClass: "fa fa-user prefix grey-text" }),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control validate",
-            attrs: { type: "text", id: "form34" }
-          }),
-          _vm._v(" "),
-          _c(
-            "label",
-            {
-              attrs: {
-                "data-error": "wrong",
-                "data-success": "right",
-                for: "form34"
-              }
-            },
-            [_vm._v("Your name")]
-          )
+            attrs: { type: "text", id: "form34", placeholder: "Nombre" }
+          })
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "md-form mb-5" }, [
-          _c("i", { staticClass: "fas fa-envelope prefix grey-text" }),
+        _c("div", { staticClass: "md-form mb-3" }, [
+          _c("i", { staticClass: "fa fa-user prefix grey-text" }),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control validate",
-            attrs: { type: "email", id: "form29" }
-          }),
-          _vm._v(" "),
-          _c(
-            "label",
-            {
-              attrs: {
-                "data-error": "wrong",
-                "data-success": "right",
-                for: "form29"
-              }
-            },
-            [_vm._v("Your email")]
-          )
+            attrs: {
+              type: "email",
+              id: "form29",
+              placeholder: "Apellido Paterno"
+            }
+          })
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "md-form mb-5" }, [
-          _c("i", { staticClass: "fas fa-tag prefix grey-text" }),
+        _c("div", { staticClass: "md-form mb-3" }, [
+          _c("i", { staticClass: "fa fa-user prefix grey-text" }),
           _vm._v(" "),
           _c("input", {
             staticClass: "form-control validate",
-            attrs: { type: "text", id: "form32" }
-          }),
+            attrs: {
+              type: "text",
+              id: "form32",
+              placeholder: "Apellido Materno"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "md-form mb-3" }, [
+          _c("i", { staticClass: "fa fa-job prefix grey-text" }),
           _vm._v(" "),
           _c(
-            "label",
+            "button",
             {
+              staticClass: "btn btn-primary btn-lg dropdown-toggle",
               attrs: {
-                "data-error": "wrong",
-                "data-success": "right",
-                for: "form32"
+                type: "button",
+                "data-toggle": "dropdown",
+                "aria-haspopup": "true",
+                "aria-expanded": "false"
               }
             },
-            [_vm._v("Subject")]
+            [_vm._v("\n                ESPECIALIDAD\n            ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "dropdown-menu",
+              attrs: { "aria-labelledby": "dropdownMenuButton" }
+            },
+            [
+              _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+                _vm._v("INFORMATICA")
+              ]),
+              _vm._v(" "),
+              _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+                _vm._v("TRABAJO SOCIAL")
+              ]),
+              _vm._v(" "),
+              _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
+                _vm._v("NUTRICION")
+              ]),
+              _vm._v(" "),
+              _c("a", { staticClass: "dropdown-menu", attrs: { href: "#" } }, [
+                _vm._v("SECRETARIADO")
+              ])
+            ]
           )
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "md-form" }, [
-          _c("i", { staticClass: "fas fa-pencil prefix grey-text" }),
-          _vm._v(" "),
-          _c("textarea", {
-            staticClass: "md-textarea form-control",
-            attrs: { type: "text", id: "form8", rows: "4" }
-          }),
-          _vm._v(" "),
-          _c(
-            "label",
-            {
-              attrs: {
-                "data-error": "wrong",
-                "data-success": "right",
-                for: "form8"
-              }
-            },
-            [_vm._v("Your message")]
-          )
-        ])
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-primary btn-lg",
+            attrs: { id: "btnguardar", type: "button" }
+          },
+          [_c("i", { staticClass: "fa fa-save" }), _vm._v(" Guardar")]
+        ),
+        _vm._v(" "),
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-primary btn-lg",
+            attrs: { id: "btncancelar", type: "button" }
+          },
+          [_c("i", { staticClass: "fa fa-close" }), _vm._v(" Cancelar")]
+        )
       ])
     ])
   }
