@@ -17,24 +17,42 @@
                     <td>Manuel</td>
                     <td>Rodriguez</td>
                     <td>Guillen</td>
-                    <td><button style="width:35px" type="button" class="fa fa-edit"></button></td>
+                    <td>
+                        <button style="width:35px" type="button" class="fa fa-edit"></button>
+                    </td>
                 </tr>
                 </tbody>
             </table>
         </div>
         <div style="text-align: right">
 
-            <button type="button" class="btn btn-primary" style="font-size: 18px" > <i class="fa fa-clock-o"></i> Agregar Maestros</button>
-            <NewTeacher></NewTeacher>
+            <button @click="openModal" type="button" class="btn btn-primary" style="font-size: 18px"><i
+                    class="fa fa-clock-o"></i> Agregar Maestros
+            </button>
+            <sweet-modal ref="modal" title="Titulo aqui">
+                <NewTeacher></NewTeacher>
+            </sweet-modal>
+
         </div>
     </div>
 </template>
 
 <script>
     import NewTeacher from "../utilities/NewTeacher";
+    import {SweetModal, SweetModalTab} from 'sweet-modal-vue'
+
     export default {
         name: "Maestros",
-        components: {NewTeacher}
+        components: {
+            NewTeacher,
+            SweetModal,
+            SweetModalTab
+        },
+        methods: {
+            openModal() {
+                this.$refs.modal.open();
+            }
+        }
     }
 </script>
 
@@ -42,9 +60,12 @@
     .listmaestr {
         font-size: 16px;
     }
-    td{text-align: center;}
-    th
-    {
+
+    td {
+        text-align: center;
+    }
+
+    th {
         text-align: center;
     }
 </style>
