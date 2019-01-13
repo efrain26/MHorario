@@ -1,5 +1,7 @@
 <template>
-    
+    <div>
+        <h3>Test ruta Horario final</h3>
+    </div>
 </template>
 
 <script>
