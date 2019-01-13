@@ -12,11 +12,12 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">2018M19R</th>
-                    <td>Manuel</td>
-                    <td>Rodriguez</td>
-                    <td>Guillen</td>
+                <tr v-for="maestro in params.maestros">
+                    <td>{{maestro.matricula}}</td>
+                    <input v-show="false" v-model="maestro.matricula" class="form-control validate" :readonly="true">
+                    <td>{{maestro.nombre}}</td>
+                    <td>{{maestro.apellido_paterno}}</td>
+                    <td>{{maestro.apellido_materno}}</td>
                     <td>
                         <button style="width:35px;  background-color: Transparent;
     background-repeat:no-repeat;
@@ -30,14 +31,12 @@
             </table>
         </div>
         <div style="text-align: right">
-
             <button @click="openModal" type="button" class="btn btn-primary" style="font-size: 18px"><i
                     class="fa fa-clock-o"></i> Agregar Maestros
             </button>
             <sweet-modal ref="modal" title="Registro de Maestros" >
                 <NewTeacher></NewTeacher>
             </sweet-modal>
-
         </div>
     </div>
 </template>
@@ -52,6 +51,20 @@
             NewTeacher,
             SweetModal,
             SweetModalTab
+        },
+        data(){
+          return{
+              params:{
+                  maestros:[
+                      {
+                          matricula:'2018M19R',
+                          nombre:'Manuel',
+                          apellido_paterno:'Rodriguez',
+                          apellido_materno:'Guillen'
+                      }
+                  ]
+              }
+          }
         },
         methods: {
             openModal() {
