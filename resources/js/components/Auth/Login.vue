@@ -2,46 +2,47 @@
     <div>
         <div class="container" style="margin-top:40px">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <strong> Sign in to continue</strong>
+                <div class="">
+                    <div class="panel panel-default login">
+                        <div class="panel-heading text-center bg-idiftec-2">
+                           <h2 class="text-white"><strong> Inicia Sesión</strong></h2>
                         </div>
-                        <div class="panel-body">
+                        <div class="panel-body bg-idiftec">
                             <form role="form" action="#" method="POST">
-                                    <div class="row">
+                                    <div class="">
                                         <div class="center-block">
                                             <img class="profile-img"
                                                  src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120" alt="">
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="">
-                                            <div class="form-group">
-                                                <div class="input-group">
-												<span class="input-group-addon">
-													<i class="glyphicon glyphicon-user"></i>
-												</span>
-                                                    <input class="form-control" placeholder="Username" name="loginname" type="text" autofocus>
+                                    <div class="text-center">
+                                        <div>
+                                            <div class="input-group mb-4">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <div>
+                                                <div class="input-group mb-4">
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text" id="basic-addon2"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    </div>
+                                                    <input type="password" class="form-control" placeholder="Contraseña" name="password" aria-label="password" aria-describedby="basic-addon2">
                                                 </div>
                                             </div>
+                                        </div>
+
+                                        <div class="mb-4">
                                             <div class="form-group">
-                                                <div class="input-group">
-												<span class="input-group-addon">
-													<i class="glyphicon glyphicon-lock"></i>
-												</span>
-                                                    <input class="form-control" placeholder="Password" name="password" type="password" value="">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in">
+                                                <input type="submit" class="btn btn-lg btn-primary btn-block" value="Iniciar Sesión">
                                             </div>
                                         </div>
                                     </div>
                             </form>
-                        </div>
-                        <div class="panel-footer ">
-                            Don't have an account! <a href="#" onClick=""> Sign Up Here </a>
                         </div>
                     </div>
                 </div>
@@ -57,6 +58,16 @@
 </script>
 
 <style scoped>
+
+    .login{
+        border: 1px solid #e1e1e1;
+        border-radius: 5px;
+        min-width: 28%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
     .panel-heading {
         padding: 5px 15px;
     }
@@ -73,5 +84,11 @@
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%;
         border-radius: 50%;
+    }
+    .bg-idiftec{
+        background-color: #eff4ee;
+    }
+    .bg-idiftec-2{
+        background-color: #000063;
     }
 </style>
