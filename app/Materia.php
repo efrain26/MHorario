@@ -11,12 +11,5 @@ class Materia extends Model
     {
         $this->belongsTo('App\Especialidad');
     }
-
-    public function semestre()
-    {
-        $this->belongsTo('App\Semestre');
-    }
-
-
 }
 
