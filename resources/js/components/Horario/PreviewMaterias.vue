@@ -32,9 +32,8 @@
                         </tbody>
                     </table>
                     <div class="float-right" id="botones">
-                        <span class="p-1"><button type="button" class="btn btn-secondary">Regresar</button></span>
                         <span class="p-1"><button type="button" class="btn btn-danger">Cancelar</button></span>
-                        <span class="p-1"><button type="button" class="btn btn-success">Guardar</button></span>
+                        <span class="p-1"><button type="button" class="btn btn-primary">Guardar</button></span>
                     </div>
                 </div>
                 </div>

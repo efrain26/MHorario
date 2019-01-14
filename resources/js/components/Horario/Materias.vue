@@ -43,10 +43,6 @@
             <PreviewMaterias></PreviewMaterias>
         </div>
 
-        <div class="float-right pt-4">
-            <span class="p-1"><button type="button" class="btn btn-primary">Guardar Horario</button></span>
-
-        </div>
     </div>
 </template>
 
