@@ -3,10 +3,9 @@
         <div class="text">
             <h2>Materias seleccionadas</h2>
         </div>
-        <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <table class="table table-hover">
+                <div class="col-lg-12">
+                    <table class="table table-hover table-bordered">
                         <thead>
                         <tr>
                             <th scope="col">Clave</th>
@@ -32,23 +31,13 @@
                         </tr>
                         </tbody>
                     </table>
+                    <div class="float-right" id="botones">
+                        <span class="p-1"><button type="button" class="btn btn-secondary">Regresar</button></span>
+                        <span class="p-1"><button type="button" class="btn btn-danger">Cancelar</button></span>
+                        <span class="p-1"><button type="button" class="btn btn-success">Guardar</button></span>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row" id="botones">
-            <div class="col-sm-9 col-md-9 col-lg-9"></div>
-            <div class="col-sm-1 col-md-1 col-lg-1">
-                <button type="button" class="btn btn-secondary">Regresar</button>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1">
-                <button type="button" class="btn btn-danger">Cancelar</button>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1">
-                <button type="button" class="btn btn-success">Guardar</button>
-            </div>
-        </div>
-        </div>
+                </div>
     </div>
 </template>
 

@@ -4,10 +4,9 @@
         <div class="text">
             <h2>Seleccionar materia</h2>
         </div>
-        <div class="container">
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-md-12">
-                    <table class="table table-hover">
+                    <table class="table table-hover table-bordered">
                         <thead>
                         <tr>
                             <th scope="col">Clave</th>
@@ -40,13 +39,13 @@
                     </table>
                 </div>
             </div>
-        </div>
-        <PreviewMaterias></PreviewMaterias>
         <div class="row">
-            <div class="col-md-10 col-lg-10"></div>
-            <div class="col-md-2 col-lg-2">
-                <button type="button" class="btn btn-success">Guardar</button>
-            </div>
+            <PreviewMaterias></PreviewMaterias>
+        </div>
+
+        <div class="float-right pt-4">
+            <span class="p-1"><button type="button" class="btn btn-primary">Guardar Horario</button></span>
+
         </div>
     </div>
 </template>
