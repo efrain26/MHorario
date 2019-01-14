@@ -1,34 +1,43 @@
 <template>
     <div>
-        <div class="mx-3">
-            <div class="md-form mb-3">
-                <i class="fa fa-user prefix grey-text"></i>
-                <input v-model="params.nombre" class="form-control validate" placeholder="Nombre">
-            </div>
-            <div class="md-form mb-3">
-                <i class="fa fa-user prefix grey-text"></i>
-                <input v-model="params.apellido_paterno" class="form-control validate"
-                       placeholder="Apellido Paterno">
-            </div>
-            <div class="md-form mb-3">
-                <i class="fa fa-user prefix grey-text"></i>
-                <input v-model="params.apellido_materno" class="form-control validate"
-                       placeholder="Apellido Materno">
-            </div>
-            <div class="md-form mb-3">
-                <i class="fa fa-user prefix grey-text"></i>
-                <select v-model="params.especialidad" class="form-control" name="ESPECIALIDAD">
+        <div class="modal-body">
+            <div class="mx-3">
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                    </div>
+                    <input type="text" v-model="params.nombre" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon2"><i class="glyphicon glyphicon-user"></i></span>
+                    </div>
+                    <input type="text" v-model="params.apellido_paterno" class="form-control" placeholder="Apellido paterno" aria-label="Username" aria-describedby="basic-addon2">
+                </div>
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3"><i class="glyphicon glyphicon-user"></i></span>
+                    </div>
+                    <input type="text" v-model="params.apellido_materno" class="form-control" placeholder="Apellido materno" aria-label="Username" aria-describedby="basic-addon3">
+                </div>
+
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <label class="input-group-text" for="inputGroupSelect01">Opciones</label>
+                    </div>
+                    <select class="custom-select" id="inputGroupSelect01" v-model="params.especialidad" name="ESPECIALIDAD">
 
                         <option v-for="item in especialidades">{{item.label}}</option>
-                </select>
+                    </select>
+                </div>
+                <div class="float-right">
+                    <button @click="closeModal" id="btncancelar" type="button" class="btn btn-secondary btn-lg">Cancelar</button>
+                    <button @click="guardar" id="btnguardar" type="button" class="btn btn-primary btn-lg"> Guardar</button>
+                </div>
             </div>
-            <button @click="guardar" id="btnguardar" type="button" class="btn btn-primary btn-lg"><i
-                    class="fa fa-save"></i> Guardar
-            </button>
-            <button @click="closeModal" id="btncancelar" type="button" class="btn btn-primary btn-lg"><i
-                    class="fa fa-close"></i> Cancelar
-            </button>
         </div>
+
     </div>
 </template>
 
@@ -77,5 +86,10 @@
 </script>
 
 <style scoped>
-
+.sweet-title{
+    background-color: #000063;
+}
+    h2{
+        margin-top: 22px !important;
+    }
 </style>

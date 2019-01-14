@@ -19,8 +19,8 @@
             </div>
         </div>
         <HorarioFinal></HorarioFinal>
-        <div class="row">
-            <div class="col-md-11">
+        <div class="row float-right">
+            <div class="col-lg-12">
                 <button type="button" class="btn btn-primary btn-lg">Generar Horario</button>
             </div>
         </div>
@@ -41,10 +41,7 @@
 </script>
 
 <style scoped>
-    .btn {
-        font-size: 15px;
-        margin-left: 98rem;
-    }
+
 
     img-thumbnail {
         text-align: center;
