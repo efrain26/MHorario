@@ -1,26 +1,23 @@
 <template>
-    <div>
+    <div class="container">
+
         <div class="row">
             <div class="col-md-12" style="padding: 30px">
-                <h1 id="escu" style="text-align: center"> <img src="/img/logo.png" class="img-rounded" style="height: 40px; width: 40px"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
+                <h1 id="escu" style="text-align: center"><img src="/img/logo.png" class="img-rounded"
+                                                              style="height: 40px; width: 40px"/><b>INSTITUTO DE
+                    DIFUSIÓN TÉCNICA No.1</b></h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12" style="text-align: right; padding:15px">
-                <button @click="showMaestros" type="button" class="btn btn-primary" style="font-size: 18px"><i
-                        class="fa fa-users"></i>Maestros
-                </button>
-                <button @click="showHorarios" type="button" class="btn btn-primary" style="font-size: 18px"><i
-                        class="fa fa-clock-o"></i>
-                    Horarios
-                </button>
-            </div>
-        </div>
-        <div class="container" v-if="open_maestros">
-            <Maestros></Maestros>
-        </div>
-        <div class="container" v-if="open_horarios">
-            <h3>Cuando se haga lo de horarios, aquí irá..</h3>
+        <div>
+
+            <tabs >
+                <tab name="Maestros" >
+                    <Maestros></Maestros>
+                </tab>
+                <tab name="Horarios">
+                    Second tab content
+                </tab>
+            </tabs>
         </div>
     </div>
 </template>
@@ -45,7 +42,13 @@
             showHorarios() {
                 this.open_maestros = false;
                 this.open_horarios = true;
-            }
+            },
+            tabClicked (selectedTab) {
+                console.log('Current tab re-clicked:' + selectedTab.tab.name);
+            },
+            tabChanged (selectedTab) {
+                console.log('Tab changed to:' + selectedTab.tab.name);
+            },
         }
     }
 </script>

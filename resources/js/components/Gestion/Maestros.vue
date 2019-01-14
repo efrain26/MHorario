@@ -1,58 +1,52 @@
-<template xmlns="http://www.w3.org/1999/html">
+<template>
     <div>
-        <div class="row">
-            <div class="col-md-12" style="text-align:right;">
-                <input id="activo"  type="checkbox" name="activo" value="1">
-                <label style="font-size: 15px" for="activo">Activo</label>
-                <input id="inactivo" type="checkbox" name="inactivo" value="2">
-                <label style="font-size: 15px" for="inactivo">Inactivo</label>
+        <div class="row float-right mb-4">
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline1">Activos</label>
+            </div>
+            <div class="custom-control custom-radio custom-control-inline">
+                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                <label class="custom-control-label" for="customRadioInline2">Inactivos</label>
             </div>
         </div>
-        <div class="container">
 
-            <table class="listmaestr table table-hover">
+        <div class="row table-responsive">
+
+            <table class="table listmaestr table-hover">
                 <thead>
                 <tr>
                     <th scope="col">Clave</th>
                     <th scope="col">Nombre</th>
-                    <th scope="col">Apellido Paterno</th>
-                    <th scope="col">Apellido Materno</th>
+                    <th scope="col">Apellido paterno</th>
+                    <th scope="col">Apellido materno</th>
                     <th scope="col">Opciones</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr v-for="maestro in params.maestros">
-                    <td>{{maestro.matricula}}</td>
+                    <th scope="row">{{maestro.matricula}}</th>
                     <input v-show="false" v-model="maestro.matricula" class="form-control validate" :readonly="true">
                     <td>{{maestro.nombre}}</td>
                     <td>{{maestro.apellido_paterno}}</td>
                     <td>{{maestro.apellido_materno}}</td>
-                    <td>
-                        <button style="width:35px;  background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;" type="button" class="fa fa-edit"></button>
-                        <button style="width:35px;  background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;" type="button" class="fa fa-arrow-down"></button>
+                    <td class="text-center">
+                        <a href="#" class="btn btn-success btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><i class="fa fa-edit"></i></a>
+                        <a href="#" class="btn btn-danger btn-xs" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-arrow-down"></i></a>
                     </td>
                 </tr>
                 </tbody>
             </table>
         </div>
-        <div style="text-align: right">
-            <button @click="openModal" type="button" class="btn btn-primary" style="font-size: 18px"><i
-                    class="fa fa-clock-o"></i> Agregar Maestros
+        <div class="float-right">
+            <button @click="openModal" type="button" class="btn btn-lg btn-primary"><i
+                    class="fa fa-clock-o"></i> Nuevo Maestro
             </button>
             <sweet-modal ref="modal" title="Registro de Maestros" >
                 <NewTeacher></NewTeacher>
             </sweet-modal>
         </div>
+
     </div>
 </template>
 

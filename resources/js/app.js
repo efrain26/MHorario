@@ -41,6 +41,9 @@ import router from './router/routes';
 
 import Vue from 'vue'
 
+import Tabs from 'vue-tabs-component';
+
+Vue.use(Tabs);
 
 
 const app = new Vue({
