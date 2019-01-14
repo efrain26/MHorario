@@ -1,6 +1,15 @@
-<template>
+<template xmlns="http://www.w3.org/1999/html">
     <div>
+        <div class="row">
+            <div class="col-md-12" style="text-align:right;">
+                <input id="activo"  type="checkbox" name="activo" value="1">
+                <label style="font-size: 15px" for="activo">Activo</label>
+                <input id="inactivo" type="checkbox" name="inactivo" value="2">
+                <label style="font-size: 15px" for="inactivo">Inactivo</label>
+            </div>
+        </div>
         <div class="container">
+
             <table class="listmaestr table table-hover">
                 <thead>
                 <tr>
@@ -9,7 +18,6 @@
                     <th scope="col">Apellido Paterno</th>
                     <th scope="col">Apellido Materno</th>
                     <th scope="col">Opciones</th>
-                    <th scope="col1">Activos</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -26,12 +34,12 @@
     cursor:pointer;
     overflow: hidden;
     outline:none;" type="button" class="fa fa-edit"></button>
-                    </td>
-                    <td style="text-align: center" >
-
-                        <input type="checkbox" name="activo" value="1">Activo
-                        <input type="checkbox" name="inactivo" value="2"> Inactivo
-
+                        <button style="width:35px;  background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;" type="button" class="fa fa-arrow-down"></button>
                     </td>
                 </tr>
                 </tbody>
