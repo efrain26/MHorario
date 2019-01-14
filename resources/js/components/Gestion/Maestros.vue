@@ -2,9 +2,9 @@
     <div>
         <div class="row">
             <div class="col-md-12" style="text-align:right;">
-                <input id="activo"  type="radio" name="activo-inactivo" value="1">
+                <input id="activo"  type="checkbox" name="activo" value="1">
                 <label style="font-size: 15px" for="activo">Activo</label>
-                <input id="inactivo" type="radio" name="activo-inactivo" value="2">
+                <input id="inactivo" type="checkbox" name="inactivo" value="2">
                 <label style="font-size: 15px" for="inactivo">Inactivo</label>
             </div>
         </div>
