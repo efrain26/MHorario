@@ -1,15 +1,7 @@
 <template>
-
     <div class="container">
-        <div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 id="escu"> <img src="/img/logo.png" class="img-rounded"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
-                </div>
-            </div>
-        </div>
         <div class="text">
-            <h2>Seleccionar materia</h2>
+            <h2>Materias seleccionadas</h2>
         </div>
         <div class="container">
             <div class="row">
@@ -25,7 +17,6 @@
                             <th scope="col">Miercoles</th>
                             <th scope="col">Jueves</th>
                             <th scope="col">Viernes</th>
-
                         </tr>
                         </thead>
                         <tbody>
@@ -100,7 +91,7 @@
     table table {
         text-align: center;
     }
-    botenes{
+    botones{
         max-width: 7.5%;
     }
 

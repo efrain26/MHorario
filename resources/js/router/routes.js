@@ -5,13 +5,8 @@ import Login from "../components/Auth/Login";
 import Gestion from "../components/Gestion/Gestion";
 import Principal from "../components/Horario/Principal";
 import Materias from "../components/Horario/Materias";
-import Maestros from "../components/Gestion/Maestros";
-import PreviewMaterias from "../components/Horario/PreviewMaterias";
-import HorarioFinal from "../components/Horario/HorarioFinal";
-
 
 Vue.use(VueRouter);
-
 
 const router = new VueRouter({
     mode:'history',
@@ -26,11 +21,6 @@ const router = new VueRouter({
             component: Gestion
         },
         {
-            path:'/gestion/maestros',
-            name:'gestion.maestros',
-            component: Maestros
-        },
-        {
             path:'/home/',
             component: Principal
         },
@@ -38,19 +28,7 @@ const router = new VueRouter({
             path:'/home/crear/',
             name:'home.crear',
             component: Materias
-        },
-        {
-            path:'/home/crear/previewmaterias',
-            name:'home.crear.previewmaterias',
-            component: PreviewMaterias
         }
-        ,
-        {
-            path:'/home/crear/previewmaterias/horariofinal',
-            name:'home.crear.previewmaterias.horariofinal',
-            component: HorarioFinal
-        }
-
     ]
 });
 

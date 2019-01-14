@@ -1,10 +1,6 @@
 <template>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 id="escu"> <img src="/img/logo.png" class="img-rounded"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
-            </div>
-        </div>
+        <BannerIdiftec></BannerIdiftec>
         <h2 class="font-weight-bold">Detalles Maestro</h2>
         <div class="container">
             <div class="row">
@@ -22,6 +18,7 @@
                 </table>
             </div>
         </div>
+        <HorarioFinal></HorarioFinal>
         <div class="row">
             <div class="col-md-11">
                 <button type="button" class="btn btn-primary btn-lg">Generar Horario</button>
@@ -35,10 +32,11 @@
 <script>
     import HorarioFinal from "./HorarioFinal";
     import Materias from "./Materias";
+    import BannerIdiftec from "../utilities/BannerIdiftec";
 
     export default {
         name: "Principal",
-        components: {HorarioFinal, Materias},
+        components: {BannerIdiftec, HorarioFinal, Materias},
     }
 </script>
 

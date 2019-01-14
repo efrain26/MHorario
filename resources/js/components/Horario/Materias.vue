@@ -1,13 +1,6 @@
 <template>
-
     <div class="container">
-        <div>
-            <div class="row">
-                <div class="col-md-12">
-                        <h1 id="escu"> <img src="/img/logo.png" class="img-rounded"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
-                </div>
-            </div>
-        </div>
+        <BannerIdiftec></BannerIdiftec>
         <div class="text">
             <h2>Seleccionar materia</h2>
         </div>
@@ -39,14 +32,16 @@
                             <td>07:50-08:50</td>
                             <td>07:50-08:50</td>
                             <td>07:50-08:50</td>
-                            <td>  <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                            <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox"
+                                       value="option1" aria-label="...">
                             </td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
+            </div>
         </div>
-        </div>
+        <PreviewMaterias></PreviewMaterias>
         <div class="row">
             <div class="col-md-10 col-lg-10"></div>
             <div class="col-md-2 col-lg-2">
@@ -57,42 +52,49 @@
 </template>
 
 <script>
-    export default {
-        name: "Materias"
+    import BannerIdiftec from "../utilities/BannerIdiftec";
+    import PreviewMaterias from "./PreviewMaterias";
 
+    export default {
+        name: "Materias",
+        components: {PreviewMaterias, BannerIdiftec}
     }
 </script>
 
 <style scoped>
-    .text
-    {
+    .text {
         margin-bottom: 15px;
         font-size: 15px;
     }
-    .btn{
+
+    .btn {
         font-size: 15px;
         margin-left: 7rem;
     }
-    table tr{
+
+    table tr {
         text-align: center;
         font-size: 15px;
     }
-    h2{
+
+    h2 {
         font-size: 2.3rem;
         margin-top: 1rem;
         text-align: center;
         margin-block-start: -2rem
     }
-    img
-    {
+
+    img {
         width: 75px;
         height: 100px;
     }
-    h1{
+
+    h1 {
         color: blue;
         text-align: center;
         font-size: 25px;
     }
+
     table table {
         text-align: center;
     }

@@ -1,54 +1,34 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h1 id="escu"> <img src="/img/logo.png" class="img-rounded"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
-            </div>
-        </div>
-        <h2>Horario de Clases </h2>
-        <div class="row">
             <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">Clave</th>
+                    <th scope="col">Materia</th>
+                    <th scope="col">Semestre</th>
+                    <th scope="col">Lunes</th>
+                    <th scope="col">Martes</th>
+                    <th scope="col">Miercoles</th>
+                    <th scope="col">Jueves</th>
+                    <th scope="col">Viernes</th>
+
+                </tr>
+                </thead>
                 <tbody>
                 <tr>
-                    <th scope="row" style="width: 20%">Nombre Maestro</th>
-                    <td>Felix Diáz Villanueva</td>
-                </tr>
-                <tr>
-                    <th scope="row">Clave</th>
-                    <td>DIVF870425</td>
+                    <th scope="row">5FP1</th>
+                    <td>Calculo Integral</td>
+                    <td>5</td>
+                    <td>07:50-08:50</td>
+                    <td>07:50-08:50</td>
+                    <td>07:50-08:50</td>
+                    <td>07:50-08:50</td>
+                    <td>07:50-08:50</td>
                 </tr>
                 </tbody>
             </table>
         </div>
-        <div class="row">
-                    <table class="table table-bordered">
-                        <thead>
-                        <tr>
-                            <th scope="col">Clave</th>
-                            <th scope="col">Materia</th>
-                            <th scope="col">Semestre</th>
-                            <th scope="col">Lunes</th>
-                            <th scope="col">Martes</th>
-                            <th scope="col">Miercoles</th>
-                            <th scope="col">Jueves</th>
-                            <th scope="col">Viernes</th>
-
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th scope="row">5FP1</th>
-                            <td>Calculo Integral</td>
-                            <td>5</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
-                        </tr>
-                        </tbody>
-                    </table>
-            </div>
     </div>
 </template>
 
@@ -59,21 +39,23 @@
 </script>
 
 <style scoped>
-    h1{
+    h1 {
         color: blue;
         text-align: center;
         font-size: 25px;
     }
-    img
-    {
+
+    img {
         width: 75px;
         height: 100px;
     }
-    table{
+
+    table {
         font-size: 15px;
     }
-    h2{
-        font-size:25px;
+
+    h2 {
+        font-size: 25px;
         text-align: center;
         margin-block-start: -2rem
     }
