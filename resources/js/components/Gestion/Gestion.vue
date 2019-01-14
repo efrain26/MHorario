@@ -1,7 +1,12 @@
 <template>
     <div>
         <div class="row">
-            <div class="col-md-12" style="text-align: right; padding:30px">
+            <div class="col-md-12" style="padding: 30px">
+                <h1 id="escu" style="text-align: center"> <img src="/img/logo.png" class="img-rounded" style="height: 40px; width: 40px"/><b>INSTITUTO DE DIFUCION TECNICA No.1</b></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="text-align: right; padding:15px">
                 <button @click="showMaestros" type="button" class="btn btn-primary" style="font-size: 18px"><i
                         class="fa fa-users"></i>Maestros
                 </button>
