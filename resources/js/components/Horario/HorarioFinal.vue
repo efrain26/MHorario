@@ -16,15 +16,15 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <th scope="row">5FP1</th>
-                    <td>Calculo Integral</td>
-                    <td>5</td>
-                    <td>07:50-08:50</td>
-                    <td>07:50-08:50</td>
-                    <td>07:50-08:50</td>
-                    <td>07:50-08:50</td>
-                    <td>07:50-08:50</td>
+                <tr v-for="HorarioF in params.HorarioFinal">
+                    <th scope="row">{{HorarioF.clave}}</th>
+                    <td>{{HorarioF.nombre}}</td>
+                    <td>{{HorarioF.semestre}}</td>
+                    <td>{{HorarioF.hora}}</td>
+                    <td>{{HorarioF.hora}}</td>
+                    <td>{{HorarioF.hora}}</td>
+                    <td>{{HorarioF.hora}}</td>
+                    <td>{{HorarioF.hora}}</td>
                 </tr>
                 </tbody>
             </table>
@@ -34,7 +34,22 @@
 
 <script>
     export default {
-        name: "HorarioFinal"
+        name: "HorarioFinal",
+
+        data(){
+            return{
+                params:{
+                    HorarioFinal:[
+                        {
+                            nombre:'Calculo',
+                            clave:'123',
+                            hora:'07:50-08:50',
+                            semestre:'5'
+                        }
+                    ]
+                }
+            }
+        }
     }
 </script>
 

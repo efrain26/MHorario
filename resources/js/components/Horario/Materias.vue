@@ -23,15 +23,15 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <th scope="row">5FP1</th>
-                            <td>Calculo Integral</td>
-                            <td>5</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
+                        <tr v-for="materia in params.materias">
+                            <th scope="row">{{materia.clave}}</th>
+                            <td>{{materia.nombre}}</td>
+                            <td>{{materia.semestre}}</td>
+                            <td>{{materia.hora}}</td>
+                            <td>{{materia.hora}}</td>
+                            <td>{{materia.hora}}</td>
+                            <td>{{materia.hora}}</td>
+                            <td>{{materia.hora}}</td>
                             <td><input class="form-check-input position-static" type="checkbox" id="blankCheckbox"
                                        value="option1" aria-label="...">
                             </td>
@@ -57,7 +57,22 @@
 
     export default {
         name: "Materias",
-        components: {PreviewMaterias, BannerIdiftec}
+        components: {PreviewMaterias, BannerIdiftec},
+
+        data(){
+            return{
+                params:{
+                    materias:[
+                        {
+                            nombre:'Calculo',
+                            clave:'123',
+                            hora:'07:50-08:50',
+                            semestre:'5'
+                        }
+                    ]
+                }
+            }
+        }
     }
 </script>
 

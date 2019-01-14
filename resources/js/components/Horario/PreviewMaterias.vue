@@ -20,15 +20,15 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
-                            <th scope="row">5FP1</th>
-                            <td>Calculo Integral</td>
-                            <td>5</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
-                            <td>07:50-08:50</td>
+                        <tr v-for="PreviewMateria in params.PreviewMaterias">
+                            <th scope="row">{{PreviewMateria.clave}}</th>
+                            <td>{{PreviewMateria.nombre}}</td>
+                            <td>{{PreviewMateria.semestre}}</td>
+                            <td>{{PreviewMateria.hora}}</td>
+                            <td>{{PreviewMateria.hora}}</td>
+                            <td>{{PreviewMateria.hora}}</td>
+                            <td>{{PreviewMateria.hora}}</td>
+                            <td>{{PreviewMateria.hora}}</td>
                         </tr>
                         </tbody>
                     </table>
@@ -54,7 +54,22 @@
 
 <script>
     export default {
-        name: "PreviewMaterias"
+        name: "PreviewMaterias",
+
+        data(){
+            return{
+                params:{
+                    PreviewMaterias:[
+                        {
+                            nombre:'Calculo',
+                            clave:'123',
+                            hora:'07:50-08:50',
+                            semestre:'5'
+                        }
+                    ]
+                }
+            }
+        }
     }
 </script>
 
