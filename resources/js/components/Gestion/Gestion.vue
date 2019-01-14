@@ -9,9 +9,8 @@
             </div>
         </div>
         <div>
-
-            <tabs >
-                <tab name="Maestros" >
+            <tabs>
+                <tab name="Maestros">
                     <Maestros></Maestros>
                 </tab>
                 <tab name="Horarios">
@@ -43,10 +42,10 @@
                 this.open_maestros = false;
                 this.open_horarios = true;
             },
-            tabClicked (selectedTab) {
+            tabClicked(selectedTab) {
                 console.log('Current tab re-clicked:' + selectedTab.tab.name);
             },
-            tabChanged (selectedTab) {
+            tabChanged(selectedTab) {
                 console.log('Tab changed to:' + selectedTab.tab.name);
             },
         }
