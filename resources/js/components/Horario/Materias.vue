@@ -11,9 +11,9 @@
         <div class="text">
             <h2>Seleccionar materia</h2>
         </div>
-        <div class="row">
-            <div class="col-md-1"></div>
-                <div class="col-md-10">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
                     <table class="table table-hover">
                         <thead>
                         <tr>
@@ -45,11 +45,11 @@
                         </tbody>
                     </table>
                 </div>
-            <div class="col-md-1"></div>
+        </div>
         </div>
         <div class="row">
-            <div class="col-md-10"></div>
-            <div class="col-md-2">
+            <div class="col-md-10 col-lg-10"></div>
+            <div class="col-md-2 col-lg-2">
                 <button type="button" class="btn btn-success">Guardar</button>
             </div>
         </div>
@@ -71,6 +71,7 @@
     }
     .btn{
         font-size: 15px;
+        margin-left: 7rem;
     }
     table tr{
         text-align: center;
