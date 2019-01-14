@@ -15,7 +15,7 @@
             <Maestros></Maestros>
         </div>
         <div class="container" v-if="open_horarios">
-            <h3>Cuando se haga lo de horarios, aquí irá...</h3>
+            <h3>Cuando se haga lo de horarios, aquí irá..</h3>
         </div>
     </div>
 </template>

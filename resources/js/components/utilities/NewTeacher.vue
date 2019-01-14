@@ -17,7 +17,8 @@
             </div>
             <div class="md-form mb-3">
                 <i class="fa fa-user prefix grey-text"></i>
-                <select v-model="params.especialidad" class="form-control">
+                <select v-model="params.especialidad" class="form-control" name="ESPECIALIDAD">
+
                         <option v-for="item in especialidades">{{item.label}}</option>
                 </select>
             </div>

@@ -9,6 +9,7 @@
                     <th scope="col">Apellido Paterno</th>
                     <th scope="col">Apellido Materno</th>
                     <th scope="col">Opciones</th>
+                    <th scope="col1">Activos</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -25,6 +26,12 @@
     cursor:pointer;
     overflow: hidden;
     outline:none;" type="button" class="fa fa-edit"></button>
+                    </td>
+                    <td style="text-align: center" >
+                        
+                        <input type="checkbox" name="activo" value="1">Activo
+                        <input type="checkbox" name="inactivo" value="2"> Inactivo
+
                     </td>
                 </tr>
                 </tbody>
