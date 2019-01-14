@@ -44,7 +44,7 @@
                                         <div class="form-group">
                                             <button @click="validateLogin" type="button"
                                                     class="btn btn-lg btn-primary btn-block"
-                                                    value="Iniciar Sesión"></button>
+                                                    value="Iniciar Sesión">Iniciar Sesión</button>
                                         </div>
                                     </div>
                                 </div>

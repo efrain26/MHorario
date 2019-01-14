@@ -13,9 +13,6 @@
                 <tab name="Maestros">
                     <Maestros></Maestros>
                 </tab>
-                <tab name="Horarios">
-                    Second tab content
-                </tab>
             </tabs>
         </div>
     </div>

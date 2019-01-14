@@ -3,11 +3,11 @@
         <div class="row float-right mb-4">
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" id="activo" name="toggle-maestros" class="custom-control-input" checked>
-                <label class="custom-control-label" for="activo">Activos</label>
+                <label style="font-size: 12px" class="custom-control-label" for="activo">Activos</label>
             </div>
             <div class="custom-control custom-radio custom-control-inline">
                 <input type="radio" id="inactivo" name="toggle-maestros" class="custom-control-input">
-                <label class="custom-control-label" for="inactivo">Inactivos</label>
+                <label style="font-size: 12px" class="custom-control-label" for="inactivo">Inactivos</label>
             </div>
         </div>
         <div class="row table-responsive">
