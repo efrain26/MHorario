@@ -28,7 +28,7 @@
     outline:none;" type="button" class="fa fa-edit"></button>
                     </td>
                     <td style="text-align: center" >
-                        
+
                         <input type="checkbox" name="activo" value="1">Activo
                         <input type="checkbox" name="inactivo" value="2"> Inactivo
 
