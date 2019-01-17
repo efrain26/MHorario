@@ -27,7 +27,7 @@
 
                 <div class="input-group mb-4">
                     <div class="input-group-prepend">
-                        <label class="input-group-text" for="inputGroupSelect01">Opciones</label>
+                        <label class="input-group-text" for="inputGroupSelect01">Especialidades</label>
                     </div>
                     <select class="custom-select" id="inputGroupSelect01" v-model="params.especialidad"
                             name="ESPECIALIDAD">
