@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Resources\PersonaResource;
+use App\Maestro;
 use App\Persona;
 use Illuminate\Http\Request;
 
@@ -15,9 +16,11 @@ class PersonaController extends Controller
      */
     public function index()
     {
-        return PersonaResource::collection(Persona::get());
+        return PersonaResource::collection(Persona::with('maestros')->get());
     }
-
+    public function test(){
+        return Maestro::with('persona')->get();
+    }
     /**
      * Show the form for creating a new resource.
      *
