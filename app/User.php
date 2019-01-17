@@ -28,9 +28,7 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    /*Horarios*/
-    public function materia()
-    {
-        $this->belongsToMany('App\Materia', 'materias_users')->withPivot('hora', 'dia');
+    public function tipoUsuario(){
+        return $this->belongsTo('App\TipoUsuario', 'tipo_usuario_id');
     }
 }

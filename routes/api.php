@@ -17,6 +17,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+Route::get('/users/', 'UserController@index');
+Route::get('/tipo-usuarios', 'TipoUsuarioController@index');
 Route::get('/personas/', 'PersonaController@index');
-Route::get('/materias-usuarios/', 'UserController@index');
+Route::get('/maestros/', 'MaestroController@index');
+Route::get('/materias/', 'MateriaController@index');
+Route::get('/especialidades/', 'EspecialidadController@index');
+

@@ -2,12 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Resources\PersonaResource;
-use App\Maestro;
-use App\Persona;
+use App\Http\Resources\MaestroResource;
 use Illuminate\Http\Request;
+use App\Maestro;
 
-class PersonaController extends Controller
+class MaestroController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,11 +15,9 @@ class PersonaController extends Controller
      */
     public function index()
     {
-        return PersonaResource::collection(Persona::with('user')->get());
+        return MaestroResource::collection(Maestro::with(['persona', 'especialidad'])->get());
     }
-    public function test(){
-        return Maestro::with('persona')->get();
-    }
+
     /**
      * Show the form for creating a new resource.
      *

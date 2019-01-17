@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Persona extends Model
 {
-    public function maestros(){
-        return $this->hasOne('App\Maestro');
+    public function user(){
+        return $this->belongsTo('App\User', 'user_id');
     }
 }

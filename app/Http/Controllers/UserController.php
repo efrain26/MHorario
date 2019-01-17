@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\UserResource;
+use App\TipoUsuario;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -14,7 +16,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return User::with('materia')->get();
+        return UserResource::collection(User::with('tipoUsuario')->get());
     }
 
     /**

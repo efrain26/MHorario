@@ -19,7 +19,8 @@ class PersonaResource extends JsonResource
             'nombre' => $this->nombre,
             'ap_paterno' => $this->ap_paterno,
             'ap_materno' => $this->ap_materno,
-            'user_id' => $this->user_id
+            'user_id' => $this->user_id,
+            'user' => UserResource::make($this->whenLoaded('user'))
         ];
     }
 }
