@@ -23,8 +23,20 @@ Vue.use(Tabs);
  * Vee validate
  */
 import VeeValidate from 'vee-validate';
-
 Vue.use(VeeValidate);
+
+import axios from 'axios';
+
+const plugins = {
+    install (Vue) {
+        Object.defineProperty(
+            Vue.prototype,
+            '$axios', {
+                value: axios
+            });
+    }
+};
+Vue.use(plugins);
 
 const app = new Vue({
     el: '#app',

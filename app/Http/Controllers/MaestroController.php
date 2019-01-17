@@ -17,6 +17,9 @@ class MaestroController extends Controller
     {
         return MaestroResource::collection(Maestro::with(['persona', 'especialidad'])->get());
     }
+    public function fetch($id){
+        return MaestroResource::make(Maestro::with(['persona', 'especialidad'])->where('id', $id)->first());
+    }
 
     /**
      * Show the form for creating a new resource.

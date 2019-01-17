@@ -16,15 +16,15 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr v-for="HorarioF in params.HorarioFinal">
-                    <th scope="row">{{HorarioF.clave}}</th>
-                    <td>{{HorarioF.nombre}}</td>
-                    <td>{{HorarioF.semestre}}</td>
-                    <td>{{HorarioF.hora}}</td>
-                    <td>{{HorarioF.hora}}</td>
-                    <td>{{HorarioF.hora}}</td>
-                    <td>{{HorarioF.hora}}</td>
-                    <td>{{HorarioF.hora}}</td>
+                <tr>
+                    <th scope="row">{{params.HorarioFinal.clave}}</th>
+                    <td>{{params.HorarioFinal.nombre}}</td>
+                    <td>{{params.HorarioFinal.semestre}}</td>
+                    <td>{{params.HorarioFinal.hora_inicio + ' - ' + params.HorarioFinal.hora_final}}</td>
+                    <td>{{params.HorarioFinal.hora_inicio + ' - ' + params.HorarioFinal.hora_final}}</td>
+                    <td>{{params.HorarioFinal.hora_inicio + ' - ' + params.HorarioFinal.hora_final}}</td>
+                    <td>{{params.HorarioFinal.hora_inicio + ' - ' + params.HorarioFinal.hora_final}}</td>
+                    <td>{{params.HorarioFinal.hora_inicio + ' - ' + params.HorarioFinal.hora_final}}</td>
                 </tr>
                 </tbody>
             </table>
@@ -36,18 +36,28 @@
     export default {
         name: "HorarioFinal",
 
-        data(){
-            return{
-                params:{
-                    HorarioFinal:[
+        data() {
+            return {
+                params: {
+                    HorarioFinal:
                         {
-                            nombre:'Calculo',
-                            clave:'123',
-                            hora:'07:50-08:50',
-                            semestre:'5'
+                            especialidad: {}
                         }
-                    ]
-                }
+                },
+                id: 1
+            }
+        },
+        mounted() {
+            this.chargeMateria();
+        },
+        methods: {
+            openModal() {
+                this.$refs.modal.open();
+            },
+            chargeMateria() {
+                this.$axios.get('api/materia/' + this.id).then(response => {
+                    this.params.HorarioFinal = response.data.data;
+                });
             }
         }
     }

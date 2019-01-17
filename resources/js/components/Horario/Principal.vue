@@ -8,11 +8,13 @@
                     <tbody>
                     <tr>
                         <th scope="row" style="width: 20%">Nombre Maestro</th>
-                        <td>Felix Diáz Villanueva</td>
+                        <td>{{params.maestro.persona.nombre +' '+ params.maestro.persona.ap_paterno + ' ' +
+                            params.maestro.persona.ap_materno}}
+                        </td>
                     </tr>
                     <tr>
                         <th scope="row">Clave</th>
-                        <td>DIVF870425</td>
+                        <td>{{params.maestro.clave}}</td>
                     </tr>
                     </tbody>
                 </table>
@@ -37,6 +39,31 @@
     export default {
         name: "Principal",
         components: {BannerIdiftec, HorarioFinal, Materias},
+        data() {
+            return {
+                params: {
+                    maestro: {
+                        persona: {},
+                        especialidad:{}
+                    },
+                },
+                id: 1
+            }
+        },
+        mounted() {
+            this.chargeMaestros();
+        },
+        methods: {
+            openModal() {
+                this.$refs.modal.open();
+            },
+            chargeMaestros() {
+                this.$axios.get('api/maestro/' + this.id).then(response => {
+                    this.params.maestro = response.data.data;
+                });
+            }
+        }
+
     }
 </script>
 
@@ -51,24 +78,28 @@
         text-align: center;
         margin-top: 15px;
     }
-    body{
+
+    body {
         text-size: 15px;
     }
-    img
-    {
+
+    img {
         width: 75px;
         height: 100px;
     }
-    h1{
+
+    h1 {
         color: blue;
         text-align: center;
         font-size: 25px;
     }
-    h2{
+
+    h2 {
         text-align: center;
         margin-top: -3rem;
     }
-    table{
+
+    table {
         font-size: 15px;
     }
 </style>

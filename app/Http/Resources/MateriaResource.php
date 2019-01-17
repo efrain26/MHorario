@@ -18,6 +18,9 @@ class MateriaResource extends JsonResource
             'id' => $this->id,
             'clave' => $this->clave,
             'nombre' => $this->nombre,
+            'semestre' => $this->semestre,
+            'hora_inicio' => $this->hora_inicio,
+            'hora_final' => $this->hora_final,
             'especialidad' => EspecialidadResource::make($this->whenLoaded('especialidad'))
         ];
     }

@@ -21,6 +21,8 @@ Route::get('/users/', 'UserController@index');
 Route::get('/tipo-usuarios', 'TipoUsuarioController@index');
 Route::get('/personas/', 'PersonaController@index');
 Route::get('/maestros/', 'MaestroController@index');
+Route::get('/maestro/{id}', 'MaestroController@fetch');
 Route::get('/materias/', 'MateriaController@index');
+Route::get('/materia/{id}', 'MateriaController@fetch');
 Route::get('/especialidades/', 'EspecialidadController@index');
 

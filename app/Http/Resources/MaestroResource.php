@@ -17,7 +17,6 @@ class MaestroResource extends JsonResource
         return [
             'id' => $this->id,
             'clave' => $this->clave,
-            'especialidad_id' => $this->especialidad_id,
             'persona' => PersonaResource::make($this->whenLoaded('persona')),
             'especialidad' => EspecialidadResource::make($this->whenLoaded('especialidad'))
         ];

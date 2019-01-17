@@ -18,16 +18,18 @@
                     <th scope="col">Nombre</th>
                     <th scope="col">Apellido paterno</th>
                     <th scope="col">Apellido materno</th>
+                    <th scope="col">Especilidad</th>
                     <th scope="col">Opciones</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr v-for="maestro in params.maestros">
-                    <th scope="row">{{maestro.matricula}}</th>
-                    <input v-show="false" v-model="maestro.matricula" class="form-control validate" :readonly="true">
-                    <td>{{maestro.nombre}}</td>
-                    <td>{{maestro.apellido_paterno}}</td>
-                    <td>{{maestro.apellido_materno}}</td>
+                    <th scope="row">{{maestro.clave}}</th>
+                    <input v-show="false" v-model="maestro.clave" class="form-control validate" :readonly="true">
+                    <td>{{maestro.persona.nombre}}</td>
+                    <td>{{maestro.persona.ap_paterno}}</td>
+                    <td>{{maestro.persona.ap_materno}}</td>
+                    <td>{{maestro.especialidad.especialidad}}</td>
                     <td class="text-center">
                         <button type="button" class="btn btn-success btn-xs"><i class="fa fa-edit"></i></button>
                         <button type="button" class="btn btn-danger btn-xs"><i class="fa fa-arrow-down"></i></button>
@@ -62,20 +64,21 @@
         data() {
             return {
                 params: {
-                    maestros: [
-                        {
-                            matricula: '2018M19R',
-                            nombre: 'Manuel',
-                            apellido_paterno: 'Rodriguez',
-                            apellido_materno: 'Guillen'
-                        }
-                    ]
+                    maestros:null,
                 }
             }
+        },
+        mounted(){
+          this.chargeMaestros();
         },
         methods: {
             openModal() {
                 this.$refs.modal.open();
+            },
+            chargeMaestros(){
+               this.$axios.get('api/maestros').then(response =>{
+                   this.params.maestros = response.data.data;
+               });
             }
         }
     }
