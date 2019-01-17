@@ -7,14 +7,18 @@
                 <table class="table table-bordered">
                     <tbody>
                     <tr>
+                        <th scope="row">Clave</th>
+                        <td>{{params.maestro.clave}}</td>
+                    </tr>
+                    <tr>
                         <th scope="row" style="width: 20%">Nombre Maestro</th>
                         <td>{{params.maestro.persona.nombre +' '+ params.maestro.persona.ap_paterno + ' ' +
                             params.maestro.persona.ap_materno}}
                         </td>
                     </tr>
                     <tr>
-                        <th scope="row">Clave</th>
-                        <td>{{params.maestro.clave}}</td>
+                        <th scope="row">Especialidad</th>
+                        <td>{{params.maestro.especialidad.especialidad }}</td>
                     </tr>
                     </tbody>
                 </table>

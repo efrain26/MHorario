@@ -25,6 +25,32 @@
                            placeholder="Apellido materno" aria-label="Username" aria-describedby="basic-addon3">
                 </div>
 
+                <!--name-->
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon4"><i class="glyphicon glyphicon-user"></i></span>
+                    </div>
+                    <input type="text" v-model="params.name" class="form-control"
+                           placeholder="name" aria-label="Username" aria-describedby="basic-addon2">
+                </div>
+                <!--email-->
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon5"><i class="glyphicon glyphicon-envelope"></i></span>
+                    </div>
+                    <input type="email" v-model="params.email" class="form-control"
+                           placeholder="email" aria-label="Username" aria-describedby="basic-addon2">
+                </div>
+                <!--password-->
+
+                <div class="input-group mb-4">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon6"><i class="	glyphicon glyphicon-lock"></i></span>
+                    </div>
+                    <input type="password" v-model="params.password" class="form-control"
+                           placeholder="password" aria-label="Username" aria-describedby="basic-addon2">
+                </div>
+
                 <div class="input-group mb-4">
                     <div class="input-group-prepend">
                         <label class="input-group-text" for="inputGroupSelect01">Especialidades</label>
@@ -59,7 +85,10 @@
                     nombre: '',
                     apellido_paterno: '',
                     apellido_materno: '',
-                    especialidad: ''
+                    especialidad: '',
+                    name:'',
+                    email:'',
+                    password:''
                 },
                 option_especialidades: null
             }
