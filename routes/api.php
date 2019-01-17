@@ -24,5 +24,6 @@ Route::get('/maestros/', 'MaestroController@index');
 Route::get('/maestro/{id}', 'MaestroController@fetch');
 Route::get('/materias/', 'MateriaController@index');
 Route::get('/materia/{id}', 'MateriaController@fetch');
+Route::get('/materia/especialidad/{especialidad}', 'MateriaController@Spec');
 Route::get('/especialidades/', 'EspecialidadController@index');
 

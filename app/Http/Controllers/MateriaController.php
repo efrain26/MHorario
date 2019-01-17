@@ -20,6 +20,10 @@ class MateriaController extends Controller
     public function fetch($id){
         return MateriaResource::make(Materia::with(['especialidad'])->where('id', $id)->first());
     }
+
+    public function Spec($especialidad){
+        return MateriaResource::collection(Materia::with(['especialidad'])->where('especialidad_id', $especialidad)->get());
+    }
     /**
      * Show the form for creating a new resource.
      *

@@ -57,15 +57,19 @@
         data(){
             return{
                 params:{
-                    materias:[
-                        {
-                            nombre:'Calculo',
-                            clave:'123',
-                            hora:'07:50-08:50',
-                            semestre:'5'
-                        }
-                    ]
-                }
+                    materias:{}
+                },
+                especialidad:1
+            }
+        },
+        mounted() {
+            this.chargeMateria();
+        },
+        methods:{
+            chargeMateria(){
+                this.$axios.get('/api/materia/especialidad/'+this.especialidad).then(response => {
+                    this.params.materias = response.data.data;
+                });
             }
         }
     }
